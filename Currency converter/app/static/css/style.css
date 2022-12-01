@@ -1,0 +1,157 @@
+
+.login-wrapper{
+    box-shadow: 0 0 0 1px rgb(0 0 0 / 5%);
+    border:none;
+    margin:40px;
+    padding:10px;
+    border-radius: 20px;
+}
+
+body{
+    font-family: Arial, sans-serif;
+}
+
+
+.money{
+    box-shadow: 0 0 0 1px rgba(26, 14, 14, 0.05);
+    display: flex;
+    justify-content: center;
+   
+}
+
+.money h1 {
+    font-family: "Trirong", serif;
+    margin: 5px;
+    color: green;
+}
+
+.money .from{
+    color: red;
+}
+
+.form{
+    display:inline-block;
+ 
+}
+
+label.list{
+    font-size: 15px;
+    font-family: Arial, sans-serif;
+    font-weight: normal;
+}
+
+.input{
+    display: block;
+    justify-content: left;
+}
+
+input[type=text],select{
+  
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+      }
+
+input[type=number],select{
+  
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+      }
+  
+
+.button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10%;
+   
+}
+
+.button button{
+    border: none;
+    color: white;
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #2196F3;
+    width: 200px;
+  }
+
+.button button:hover{
+    background: #0b7dda;
+}
+
+
+h2{
+    text-align: center;
+    font-family:  sans-serif;
+    font-size: 30px;
+    text-shadow: 3px 3px 3px #ababab;
+}
+
+.container {
+    background: #f4f4f4;
+    margin: 2em auto;
+    padding: 0.8em;
+    width: 30em;
+    border-radius: 10px;
+    
+ 
+    }
+
+label {
+        display: block;
+        margin-bottom: 5px;
+        font-family: Arial, sans-serif;
+        font-weight: bold;
+        }
+
+
+input {
+     margin-bottom: 10px;
+     }
+
+select{
+        margin-bottom: 10px;
+    }
+
+option{
+    margin: 10px;
+    padding: 50px;
+}
+
+
+button {
+    padding: 5px;
+    margin: 10px 0;
+    }
+
+
+.glow{
+        font-size: 30px;
+        color: rgb(230, 18, 18);
+        text-align: center;
+        animation: glow 1s ease-in-out infinite alternate;
+        font-weight: bolder;
+      }
+      
+@-webkit-keyframes glow {
+    from{
+          text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #046af0, 0 0 40px #006be6, 0 0 50px #007fe6, 0 0 60px #007fe6, 0 0 70px #007fe6;
+        }
+        
+    to{
+          text-shadow: 0 0 20px #fff, 0 0 30px #ffffff, 0 0 40px #4da0ff, 0 0 50px #4d94ff, 0 0 60px #4d9aff, 0 0 70px #4da0ff, 0 0 80px #0e98e9;
+        }
+ }
+
+
+
+
