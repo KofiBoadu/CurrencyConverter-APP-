@@ -35,8 +35,10 @@
           <div class="introduction">
 
           <h3>
-            <strong class="heading">Real-Time Financial Tools </strong><br> 
-            
+            <strong class="heading">Real-Time Financial Tools </strong>
+
+            <br> 
+            <br>
 
            Get Instant feedbacks, News and Latest Software To Help <br>
             Improve Your Money!
@@ -44,15 +46,28 @@
             </h3>
 
          </div>
+           
+             <div class="weather">
 
+            <span>{{data[0]}},{{data[1]}}</span>
+            
+            <h1>{{data[2]}}°</h1>
+           
+                 
+            </div>
+        
+           
 
           <div class="container">
-          {% block content %}
 
+
+          {% block content %}
+          
+         
           {% endblock content %}
           </div>
 
-      </div>
+        </div>
 
 
         <script>

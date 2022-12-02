@@ -103,6 +103,7 @@ h2{
     width: 25em;
     border-radius: 10px;
     margin-top: 30px;
+    margin-bottom: 20px;
 
     }
 
@@ -111,7 +112,9 @@ h2{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    margin: 10px;
+    background-image: url(https://weatherstack.com/site_images/mountains.svg),linear-gradient(135deg, #1f4e69 0, #164058 100%);
+   background-size: cover;
+   
 
 }
 
@@ -126,12 +129,43 @@ h2{
 }
 
 .introduction h3{
+    color: white;
+    padding-top: 20px;
+    font-family: "Open Sans", "Gill Sans MT", "Gill Sans", Corbel, Arial, sans-serif;
     
 }
 .heading{
     font-size: 50px;
+    color: #2196F3;
+    margin-bottom: 20px;
+    font-family: "Open Sans", "Gill Sans MT", "Gill Sans", Corbel, Arial, sans-serif;
    
 }
+
+
+
+.weather{
+
+  
+    margin-top: 25px;
+    text-align: center;
+    padding-top: 60px;
+    font-size: 20px;
+
+
+}
+
+
+.weather h1{
+    font-size: 110px;
+    margin-top: 10px;
+    color: white;
+}
+
+
+
+
+
 label {
         display: block;
         margin-bottom: 5px;
