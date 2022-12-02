@@ -2,9 +2,10 @@
 .login-wrapper{
     box-shadow: 0 0 0 1px rgb(0 0 0 / 5%);
     border:none;
-    margin:40px;
+    margin:25px;
     padding:10px;
     border-radius: 20px;
+   
 }
 
 body{
@@ -98,14 +99,39 @@ h2{
 
 .container {
     background: #f4f4f4;
-    margin: 2em auto;
     padding: 0.8em;
-    width: 30em;
+    width: 25em;
     border-radius: 10px;
-    
- 
+    margin-top: 30px;
+
     }
 
+
+.main-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 10px;
+
+}
+
+
+.introduction{
+   
+    text-align: center;
+    padding-top: 50px;
+
+
+    
+}
+
+.introduction h3{
+    
+}
+.heading{
+    font-size: 50px;
+   
+}
 label {
         display: block;
         margin-bottom: 5px;
