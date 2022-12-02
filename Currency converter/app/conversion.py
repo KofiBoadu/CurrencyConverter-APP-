@@ -8,7 +8,6 @@ app= Flask(__name__)
 app.config.from_object(__name__)
 
 
-
 @app.route('/',methods= ['GET','POST'])
 def Converter():
     if request.method=="GET":
@@ -34,18 +33,15 @@ def Converter():
                 results.append(toCurr)
                 results.append(amount)
                 conVert=url.apiReport()["result"]
-                results.append(conVert)
+                results.append(round(conVert))
         data= {'from':results[0], 'to':results[1],'amount':results[2],'convertion':results[3]}
-        return render_template("main.html",data=data)
+        report=Weather().report()
+        return render_template("main.html",data=data,report=report)
 
 
 
-# @app.route('/temp',methods=["GET",'POST'])
-# def Temp():
-#     if request.method=="GET":
-#         currentWeather= Weather()
-#         temp=currentWeather.report()
-#         return render_template("templates.html",temp=temp) 
+
+
 
 
 

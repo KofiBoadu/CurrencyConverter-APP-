@@ -1,10 +1,22 @@
 {% extends 'templates.html' %}
 
+
+
  
-           
 
 {% block content%}
 
+            <div class="weather">
+
+                <span>{{report[0]}},{{report[1]}}</span>
+                
+                <h1>{{report[2]}}°</h1>
+               
+                 
+            </div>
+
+
+<div class="container">
 <h2 class= "glow">Money Exchange Calculator </h2>
 
 
@@ -51,8 +63,9 @@
      <h1 >{{data["to"]}}</h1>
      <h1 >{{data["convertion"]}}</h1>
      
-
  </div>
+
+</div>
      
     
  {% endblock%}

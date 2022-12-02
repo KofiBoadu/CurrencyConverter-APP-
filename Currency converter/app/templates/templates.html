@@ -14,8 +14,6 @@
 
         <div class="topnav" id="myTopnav">
             <a href="#home" class="active">Home</a>
-            <a href="#news">News</a>
-            <a href="#contact">Contact</a>
             <div class="dropdown">
               <button class="dropbtn">Finance news
                 <i class="fa fa-caret-down"></i>
@@ -26,7 +24,6 @@
                 <a href="#">Link 3</a>
               </div>
             </div> 
-            <a href="#about">About</a>
             <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
           </div>
 
@@ -46,26 +43,17 @@
             </h3>
 
          </div>
-           
-             <div class="weather">
-
-            <span>{{data[0]}},{{data[1]}}</span>
-            
-            <h1>{{data[2]}}°</h1>
-           
-                 
-            </div>
-        
-           
-
-          <div class="container">
-
+          
 
           {% block content %}
           
          
+
+
+
+
           {% endblock content %}
-          </div>
+          <!-- </div> -->
 
         </div>
 
