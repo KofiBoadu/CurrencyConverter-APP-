@@ -2,6 +2,7 @@
 from flask import Flask, render_template,request,  url_for
 from currency import *
 from weather import *
+from finance import * 
 
 
 app= Flask(__name__)
@@ -11,9 +12,9 @@ app.config.from_object(__name__)
 @app.route('/',methods= ['GET','POST'])
 def Converter():
     if request.method=="GET":
-        currentWeather= Weather()
-        data=currentWeather.report()
-        return render_template("convert.html",data=data)
+        data=Weather().report()
+        finance= FinanceNews().newsData()
+        return render_template("convert.html",data=data,finance=finance)
 
         
 

@@ -58,6 +58,22 @@
         </div>
 
 
+        <div class="finance">
+
+        {% for key,value in finance.items()%}
+
+          <div class="news">
+            <div class="news-title"><h4>{{value['title']}}</h4></div>
+            <div class="news-des"><p>{{value['description']}}</p></div>
+            <p>Source:{{value['source']}}</p>
+            <button><a class="link" href="{{value['url']}}">Read More</a></button>
+          </div>
+<!-- #keys, title,url,description,source,'published_at -->
+        {% endfor %}
+
+        </div>
+
+
         <script>
 
             function myFunction() {
