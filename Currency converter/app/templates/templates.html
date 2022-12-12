@@ -62,13 +62,21 @@
 
         {% for key,value in finance.items()%}
 
-          <div class="news">
-            <div class="news-title"><h4>{{value['title']}}</h4></div>
-            <div class="news-des"><p>{{value['description']}}</p></div>
-            <p>Source:{{value['source']}}</p>
-            <button><a class="link" href="{{value['url']}}">Read More</a></button>
-          </div>
-<!-- #keys, title,url,description,source,'published_at -->
+
+          <figure class="snip1527">
+          
+            <div><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/pr-sample24.jpg"></div>
+          
+            
+            <figcaption>
+              <div class="date"><span class="day">{{date[1]}}</span><span class="month">{{date[0]}}</span></div>
+              <h3>{{value['title']}}</h3>
+              <p> {{value['description']}}  </p>
+              <h3>Source:{{value['source']}}</h3>
+            </figcaption>
+            <a href="{{value['url']}}"></a>
+          </figure>
+
         {% endfor %}
 
         </div>
@@ -84,6 +92,14 @@
                 x.className = "topnav";
               }
             }
+
+
+
+            $(".hover").mouseleave(
+              function() {
+                $(this).removeClass("hover");
+              }
+            );
         </script>
     </body>
 

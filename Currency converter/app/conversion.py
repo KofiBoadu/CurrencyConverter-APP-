@@ -14,10 +14,8 @@ def Converter():
     if request.method=="GET":
         data=Weather().report()
         finance= FinanceNews().newsData()
-        return render_template("convert.html",data=data,finance=finance)
-
-        
-
+        date= FinanceNews().todayDate()
+        return render_template("convert.html",data=data,finance=finance, date=date)
     if request.method== "POST":
         amount=request.form['amount']
         fromCurr= request.form["from"]
@@ -37,7 +35,9 @@ def Converter():
                 results.append(round(conVert))
         data= {'from':results[0], 'to':results[1],'amount':results[2],'convertion':results[3]}
         report=Weather().report()
-        return render_template("main.html",data=data,report=report)
+        finance= FinanceNews().DataImage()
+        date= FinanceNews().todayDate()
+        return render_template("main.html",data=data,report=report,finance=finance,date=date)
 
 
 

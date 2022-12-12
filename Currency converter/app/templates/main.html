@@ -25,24 +25,24 @@
 
     <form action="" method="POST">
     <div>
-        <label class="label" for= "amount"> Amount: </label>
-        <input type="number"  id= "amount" name="amount" value= "{{request.form.amount}}">
+        <!-- <label class="label" for= "amount"> Amount: </label> -->
+        <input type="number"  id= "amount" name="amount" value= "{{request.form.amount}}" placeholder="Enter Amount" required>
     </div>
 
 
     <div>
-        <label class="label" for= "fromCurrency">From: </label>
+        <!-- <label class="label" for= "fromCurrency">From: </label> -->
         <label  class= "list" for= "fromCurrency">AUD,BTC,CAD,CNY,EUR,GBP,GHS,JPY,USD </label>
-        <input type="text"  id= "from" name="from" value= "{{request.form.from}}">
+        <input type="text"  id= "from" name="from" value= "{{request.form.from}}" placeholder="From Currency" required>
         
     </div>
 
 
     <div>
-        <label class="label" for= "toCurrency"> To: </label>
+        <!-- <label class="label" for= "toCurrency"> To: </label> -->
         <br>
         <label class= "list" for= "toCurrency">AUD,BTC,CAD,CNY,EUR,GBP,GHS,JPY,USD </label>
-        <input type="text"  id= "to" name="to" value= "{{request.form.to}}">
+        <input type="text"  id= "to" name="to" value= "{{request.form.to}}" placeholder="To Currency" required>
 
     </div>
 
@@ -67,6 +67,10 @@
 
 </div>
      
+
+
+   
+
     
  {% endblock%}
 
